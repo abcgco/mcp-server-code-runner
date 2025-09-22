@@ -17,6 +17,8 @@ RUN npm run build
 ## Stage 2: Runtime
 FROM node:lts-alpine
 
+LABEL io.modelcontextprotocol.server.name="io.github.formulahendry/code-runner"
+
 WORKDIR /app
 
 # Install Python and other programming languages
